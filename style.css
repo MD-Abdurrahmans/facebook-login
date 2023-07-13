@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+section{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook-container{
+    background-color: rgb(223, 229, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+    padding: 100px 100px;
+}
+.facebook-right{
+    padding: 10px;
+    box-shadow: 4px 4px 15px rgb(216, 215, 215);
+    background-color: white;
+    border-radius: 5px;
+    border: 0;
+}
+
+.facebook-left,.facebook-right{
+
+    width: 50%;
+
+}
+.title{
+    color: blue;
+    font-size: 3em;
+}
+.des{
+    font-weight: 600px;
+     font-size: 1vmax;
+    
+}
+
+.facebook-right input{
+     display: flex;
+     flex-direction: column;
+    padding: 1.5em 10em 1.5em 1.5em;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 90%;
+    outline: none;
+    border: 1px solid rgb(225, 225, 225);
+    color: gray;
+  
+}
+
+.facebook-right input[type="button"]{
+    background-color: blue;
+    width: 90%;
+    font-weight: 800;
+    color: white;
+    padding: 14px 25px;
+}
+
+button{
+    background-color: white;
+    padding: 14px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.bg-blue{
+    width: 90%;
+    margin: 0;
+    border: 0;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+}
+.bg-white{
+    width: 90%;
+    margin: 0;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(63, 63, 207);
+    font-weight: 700;
+}
+
+.bg-green{
+
+    background-color: rgb(42, 181, 42);
+    color: white;
+    font-weight: 600;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:576px) {
+    
+    .facebook-container{
+        background-color: rgb(223, 229, 231);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        height: 100vh;
+        padding: 100px 100px;
+    }
+.des{
+    font-size: 0.9em;
+}
+    .facebook-left,.facebook-right{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .facebook-container{
+        background-color: rgb(223, 229, 231);
+        display: flex;
+      
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 100vh;
+        padding: 100px 100px;
+    }
+
+    .des{
+        font-size: 1em;
+    }
+
+}
